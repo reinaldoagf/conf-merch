@@ -13,7 +13,7 @@ import useInitialState from '../hooks/useInitialState';
 const app = () => {
     const initialState = useInitialState();
     return (
-        <AppContext.provider value={initialState}>
+        <AppContext.Provider value={initialState}>
             <BrowserRouter>
                 <Layout>
                     <Switch>
@@ -26,7 +26,7 @@ const app = () => {
                     </Switch>
                 </Layout>
             </BrowserRouter>
-        </AppContext.provider>
+        </AppContext.Provider>
     );
 };
 
