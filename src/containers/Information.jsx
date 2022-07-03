@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/components/Information.scss';
 const Information = () => {
     return (
@@ -25,7 +26,9 @@ const Information = () => {
                         Regresar
                     </div>
                     <div className="Information-next">
-                        Pagar
+                        <Link to="/checkout/payment">
+                            <button>Pagar</button>
+                        </Link>
                     </div>
                 </div>
             </div>
