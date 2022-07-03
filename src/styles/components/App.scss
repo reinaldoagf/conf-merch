@@ -1,5 +1,6 @@
-$body-color: blue;
+$primary-color: blue;
 
-body {
-  color: $body-color;
+h1 {
+  font-size: 30px;
+  color: $primary-color;
 }
