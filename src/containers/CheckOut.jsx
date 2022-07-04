@@ -9,7 +9,7 @@ const CheckOut = () => {
     const handleRomoveFromCart = (product) => {
         removeFromCart(product)
     }
-    const handleSumTotal = () => {
+    const getSumTotal = () => {
         return cart.reduce((acum,current) => acum + current.price,0);
     }
     return (
@@ -37,7 +37,7 @@ const CheckOut = () => {
             {
                 cart.length > 0 && (
                     <div className="Checkout-sidebar">
-                        <h3>Precio total: ${handleSumTotal()}</h3>
+                        <h3>Precio total: ${getSumTotal()}</h3>
                         <Link to="/checkout/information">
                             <button type='button'>Continuar pedido</button>
                         </Link>
