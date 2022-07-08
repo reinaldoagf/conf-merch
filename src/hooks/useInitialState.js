@@ -1,5 +1,5 @@
 import { useState } from "react";
-import initialState from '../initialState'
+import initialState from '../initialState';
 const useInitialState = () => {
     const [state, setState] = useState(initialState);
 
@@ -18,7 +18,7 @@ const useInitialState = () => {
     const addToBuyer = payload => {
         setState({
             ...state,
-            buyer: [...state.buyer, payload]
+            buyer: payload
         })
     }
     const addNewOrder = payload => {

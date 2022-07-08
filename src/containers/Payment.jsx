@@ -21,13 +21,11 @@ const Payment = () => {
         return cart.reduce((acum, current) => acum + current.price, 0);
     }
     const handlePaymentSuccess = (data) => {
-        console.log('data:', data)
         addNewOrder({
             buyer,
             products: cart,
             payment: data
         })
-        console.log('orders:',orders)
         history.push('/checkout/success')
     }
     const handlePaymentError = (error) => {
