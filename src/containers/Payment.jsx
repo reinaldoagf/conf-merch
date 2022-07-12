@@ -7,7 +7,7 @@ import '../styles/components/Payment.scss';
 const Payment = () => {
     const history = useHistory();
     const { state, addNewOrder } = useContext(AppContext)
-    const { cart, buyer, orders } = state;
+    const { cart, buyer } = state;
     const paypalOptions = {
         clientId: 'ASPyHh4ELftFk0Kj5KLerq3X1HDAtU2dX10j64QL-uzFzLdV29IhlBu3uiR5eX1uXoUdSgHkl0viPOLQ',
         intent: 'capture',
@@ -40,6 +40,7 @@ const Payment = () => {
         <div className="Payment">
             <div className="Payment-content">
                 <h3>Resumen del pedido:</h3>
+                <h3>Esto es una prueba</h3>
                 {cart.length > 0 && (<ul>
                     {cart.map(e => (
                         <li key={`item-${e.id}`} >

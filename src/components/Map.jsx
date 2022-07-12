@@ -6,11 +6,9 @@ const Map = ({data}) => {
     height: "50vh",
     width: "100%"
   }
-
   const defaultCenter = {
     lat: data.lat, lng: data.lng
   }
-
   return (
     <LoadScript googleMapsApiKey='AIzaSyCmjvkXB_DMnBUNwxQztLMStyQmA_szbNw'>
       <GoogleMap
